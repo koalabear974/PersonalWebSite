@@ -1,0 +1,58 @@
+@navbarHeight: 60px;
+@blockLength: 650px;
+
+@colorBlack: black;
+@colorWhite: white;
+@colorBlue-extralight: #ECF6F4;
+@colorBlue-light: #74CAD9;
+@colorBlue-normal: #0689A7;
+@colorBlue-darken: #01638C;
+@colorBlue-black: #08020E;
+
+@fa-font-path:   "../font";
+
+
+.navbar {
+	background-color: @colorBlue-black;
+	height: @navbarHeight;
+}
+
+.main-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;	
+	margin-top: @navbarHeight;
+	background-color: @colorBlue-black;
+}
+
+.banner {
+	flex: 0 0 100%;
+	margin-top: -30%;
+}
+
+.banner_img-container {
+	z-index: -1;
+}
+
+.banner_img-container_img {
+	height: 100%;
+	width: 100%;
+}
+
+.intro-container {
+	width: @blockLength;
+	display: flex;
+	background-color: @colorBlue-extralight;
+	flex-direction: row;
+}
+
+.intro-container_left {
+	flex: 1 1 70%;
+	display: flex;
+	flex-direction: row;
+}
+
+.intro-container_right {
+	flex: 1 1 30%;
+	display: flex;
+}

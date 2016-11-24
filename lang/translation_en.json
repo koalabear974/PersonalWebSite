@@ -1,3 +1,8 @@
 {
-	"home":"Home"
+	"home":"Home",
+	"cv":"Resume",
+	"contactme":"Contact me",
+	"helloEvr":"Hello World!",
+	"currentSituation":"I am a young web designer, full-stack developper, and IT technician. Recently graduated from University of Montréal."
+	
 }
