@@ -1,0 +1,308 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+}
+
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  box-shadow: 5px 5px 10px rgba(10,10,10,0.80);
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+.scale-swipe{
+  -webkit-transition: all .1s ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+}
+.scale-swipe:hover{
+  -webkit-transition: all .1s ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+}
+/* Declare heights because of positioning of img element */
+
+.headImage {
+  z-index: 10;
+  height: 500px;
+  max-height: 500px;
+  min-width: 100%;
+  margin-bottom: 60px;
+  overflow: hidden;
+  
+}
+.headImage > img {
+  display: inline;
+  margin: -32% 0;
+  width: 100%;
+  height: auto;
+}
+.headImage .item{
+  float: left;
+  z-index: 10;
+  position: relative;
+  width: 400px;
+  top: 250px;
+  left: 5%;
+
+  background-color: rgba(30, 30, 30,0.68);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(10,10,10,0.80);
+  padding:0 15px 10px;
+  color: white;
+}
+
+.headImage .item .item-inner  a{
+  float:right;
+}
+.headImageAM {
+  z-index: 10;
+  height: 1100px;
+  max-height: 1100px;
+  min-width: 100%;
+  margin-bottom: 0px;
+  overflow: hidden;
+  
+}
+.headImageAM > img {
+  z-index: -10;
+  display: inline;
+  float:left;
+  margin: -55% 3%;
+  width: 100%;
+  height: auto;
+}
+.headImageAM .itemAM{
+
+  z-index: 10;
+  position: relative;
+  margin: auto;
+  width:70%;
+
+  
+  padding:0 15px 10px;
+
+  text-align: center;
+}
+
+.headImageAM .itemAM .itemAM-inner{
+  margin-top:150px;
+  margin-bottom: 100px;
+  color: black;
+
+}
+.headImageAM .itemAM .itemAM-inner  a{
+  
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+.CV {
+  text-align: center;
+  margin-top:150px;
+}
+.CV iframe{
+z-index: 10;
+height: 1400px;
+width: 970px;
+}
+.CVbar{
+  position: absolute;
+  margin-top:20%;
+  z-index:-10;
+  background-color: #D24717;
+  width:100%;
+  height: 300px;
+  border-bottom: solid 30px #918485;
+  border-top: solid 30px #F4B19B;
+}
+.comming{
+  margin-top:150px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  width: 500px;
+}
+.presentation{
+  background-color: #428BCA;
+  color: white; 
+  padding-top: 30px;
+  padding-bottom: 10px;
+  border-bottom: solid 30px #777777;
+}
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.hobbies{
+  padding-top: 0px;
+}
+.hobbies-heading{
+  margin-top:0px;
+  padding-bottom: 0px;
+  text-align: center;
+}
+
+footer{
+  margin-top: 50px;
+}
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0 ; /* Space out the Bootstrap <hr> more */
+}
+.featurette .col-md-5{
+  text-align: center;
+  
+}
+.featurette img{
+  width: 320px;
+  height: 320px;
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  margin-top: 20px;
+  letter-spacing: -1px;
+}
+
+.blockquote1{
+  border-left: 10px solid #5cb85c;
+}
+.blockquote2{
+  border-left: 10px solid #5bc0de;
+}
+.blockquote3{
+  border-left: 10px solid #f0ad4e;
+}
+.blockquote4{
+  border-left: 10px solid #d9534f;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (max-width: 1200px) {
+  .headImageAM > img {
+    
+  }
+  .headImageAM .itemAM .itemAM-inner{
+    margin-bottom: 200px;
+  }
+  address{
+    text-align:center;
+  }
+}
+@media (max-width: 1400px) {
+  .headImageAM > img {
+    
+  }
+}
+@media (max-width: 900px) {
+  .headImage > img {
+    display: inline;
+    
+    margin: -32% -80px ;
+    width: 1050px;
+    min-height: 700px;
+    
+  }
+  .headImageAM > img {
+    
+  }
+}
+@media (max-width: 500px) {
+  .headImageAM > img {
+   
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    
+  }
+}
